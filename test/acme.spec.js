@@ -1,11 +1,11 @@
 'use strict'
 
-const acme = require('.')
+const acme = require('..')
 const koa = require('koa')
 const expect = require('unexpected')
 const supertest = require('co-supertest')
 
-describe('koa-acme', function () {
+describe('acme', function () {
   beforeEach(function () {
     this.app = koa()
     this.request = supertest(this.app.callback())
@@ -27,7 +27,7 @@ describe('koa-acme', function () {
   })
 
   it('redirects http requests', function * () {
-    this.app.use(letsencrypt({
+    this.app.use(acme({
       forceSecure: true
     }))
     let res = yield this.request.get('/test')
@@ -37,7 +37,7 @@ describe('koa-acme', function () {
   })
 
   it('does not redirect challenge requests', function * () {
-    this.app.use(letsencrypt({
+    this.app.use(acme({
       forceSecure: true
     }))
     yield this.request.get('/.well-known/acme-challenge/invalid')
