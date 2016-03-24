@@ -22,7 +22,7 @@ app.use(acme({
         'test': 'test.1'
     },
     forceSecure: true
-})
+}))
 ```
 
 Configure your challenge responses any way you see fit (config file,
