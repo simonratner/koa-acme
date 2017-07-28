@@ -1,6 +1,6 @@
 {
   "name": "koa-acme",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Koa middleware for handling ACME requests.",
   "author": "Simon Ratner (https://github.com/simonratner)",
   "keywords": [
@@ -8,22 +8,19 @@
     "acme",
     "letsencrypt"
   ],
-  "dependencies": {},
   "peerDependencies": {
-    "koa": "^1.2.0"
+    "koa": "^2.3.0"
   },
   "devDependencies": {
-    "co-mocha": "^1.1.2",
-    "co-supertest": "^0.0.10",
-    "mocha": "^2.4.5",
-    "mocha-standard": "^1.0.0",
-    "standard": "^6.0.8",
-    "supertest": "^1.2.0",
-    "unexpected": "^10.10.12"
+    "mocha": "3.4.2",
+    "mocha-standard": "1.0.0",
+    "standard": "10.0.2",
+    "supertest": "3.0.0",
+    "unexpected": "10.32.1"
   },
   "main": "index.js",
   "scripts": {
-    "test": "mocha -r co-mocha --recursive test"
+    "test": "mocha --recursive test"
   },
   "homepage": "https://github.com/simonratner/koa-acme",
   "repository": {

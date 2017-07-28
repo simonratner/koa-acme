@@ -3,20 +3,20 @@
 module.exports = function (options) {
   options = options || {}
   options.challenge = options.challenge || {}
-  return function * (next) {
+  return function (ctx, next) {
     // Respond to acme http-01 challenge requests.
-    let match = this.path.match(/^\/\.well-known\/acme-challenge\/(.+)$/)
+    let match = ctx.path.match(/^\/\.well-known\/acme-challenge\/(.+)$/)
     if (match) {
       let response = options.challenge[match[1]]
       if (response) {
-        this.status = 200
-        this.body = response
+        ctx.status = 200
+        ctx.body = response
       }
-    } else if (options.forceSecure && !this.secure) {
-      this.status = 301
-      this.redirect(`https://${this.host}${this.url}`)
+    } else if (options.forceSecure && !ctx.secure) {
+      ctx.status = 301
+      ctx.redirect(`https://${ctx.host}${ctx.url}`)
     } else {
-      yield next
+      return next()
     }
   }
 }
