@@ -28,6 +28,9 @@ app.use(acme({
 Configure your challenge responses any way you see fit (config file,
 environment variable, external vault, etc.)
 
+# Legacy koa v1.x support
+
+See [koa-master/v1](https://github.com/simonratner/koa-acme/tree/v1) for koa v1.x middleware.
 # License
 
 [MIT](LICENSE)
