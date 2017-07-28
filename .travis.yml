@@ -1,7 +1,8 @@
 language: node_js
 install:
-  - npm install koa
+  - npm install koa@1
   - npm install
 node_js:
   - "4"
-  - "5"
+  - "6"
+  - "8"
