@@ -1,7 +1,8 @@
 # koa-acme
 
 [![travis](http://img.shields.io/travis/simonratner/koa-acme/master.svg?style=flat-square)](https://travis-ci.org/simonratner/koa-acme) &nbsp;
-[![npm](http://img.shields.io/npm/v/koa-acme.svg?style=flat-square)](https://www.npmjs.org/package/koa-acme)
+[![npm](http://img.shields.io/npm/v/koa-acme.svg?style=flat-square)](https://www.npmjs.org/package/koa-acme) &nbsp;
+[![license](https://img.shields.io/github/license/simonratner/koa-acme.svg?style=flat-square)](LICENSE)
 
 [Koa](http://koajs.com) middleware for handling [ACME](https://github.com/ietf-wg-acme/acme) challenge requests.
 
