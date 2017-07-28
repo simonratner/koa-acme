@@ -3,7 +3,7 @@
 [![travis](http://img.shields.io/travis/simonratner/koa-acme/master.svg?style=flat-square)](https://travis-ci.org/simonratner/koa-acme) &nbsp;
 [![npm](http://img.shields.io/npm/v/koa-acme.svg?style=flat-square)](https://www.npmjs.org/package/koa-acme)
 
-[Koa](http://koajs.in) middleware for handling [ACME](https://github.com/ietf-wg-acme/acme) challenge requests.
+[Koa](http://koajs.com) middleware for handling [ACME](https://github.com/ietf-wg-acme/acme) challenge requests.
 
 # Install
 
