@@ -1,7 +1,7 @@
 {
   "name": "koa-acme",
-  "version": "1.0.1",
-  "description": "Koa middleware for handling ACME requests.",
+  "version": "1.0.3",
+  "description": "Koa legacy (v1.x) middleware for handling ACME requests.",
   "author": "Simon Ratner (https://github.com/simonratner)",
   "keywords": [
     "koa",
@@ -25,7 +25,7 @@
   "scripts": {
     "test": "mocha -r co-mocha --recursive test"
   },
-  "homepage": "https://github.com/simonratner/koa-acme",
+  "homepage": "https://github.com/simonratner/koa-acme/tree/v1",
   "repository": {
     "type": "git",
     "url": "https://github.com/simonratner/koa-acme.git"
