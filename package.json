@@ -1,6 +1,6 @@
 {
   "name": "koa-acme",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Koa middleware for handling ACME requests.",
   "author": "Simon Ratner (https://github.com/simonratner)",
   "keywords": [
