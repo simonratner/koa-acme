@@ -2,12 +2,11 @@
 
 module.exports = function (options) {
   options = options || {}
-  options.challenge = options.challenge || {}
   return function (ctx, next) {
     // Respond to acme http-01 challenge requests.
     let match = ctx.path.match(/^\/\.well-known\/acme-challenge\/(.+)$/)
     if (match) {
-      let response = options.challenge[match[1]]
+      let response = options.challenge && options.challenge[match[1]]
       if (response) {
         ctx.status = 200
         ctx.body = response

@@ -19,6 +19,7 @@ describe('acme', function () {
   })
 
   it('responds to invalid challenge', async function () {
+    this.app.use(acme())
     return this.request.get('/.well-known/acme-challenge/invalid').expect(404)
   })
 
